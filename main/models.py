@@ -19,3 +19,11 @@ class ScrapyItem(models.Model):
 
     def __str__(self):
         return self.unique_id
+
+class Quote(models.Model):
+    """
+    The scrapped data will be saved in this model
+    """
+    text = models.TextField()
+    author = models.CharField(max_length=512)
+
