@@ -31,6 +31,6 @@ Then if you go to the localhost http://127.0.0.1:6800/, you will see the scrapyd
 
 5- To run it you must send a http request to Scrapyd with the job info
 ```
-curl http://localhost:6800/schedule.json -d project=default -d spider=toscrape-css
+$ curl http://localhost:6800/schedule.json -d project=default -d spider=toscrape-css
 ```
 This project is inspired from a blog post of [medium](https://medium.com/@ali_oguzhan/how-to-use-scrapy-with-django-application-c16fabd0e62e?fbclid=IwAR0Ni7cvNk3aKJLTkWkzkYLjOHoYOpV3Tp1Mr_eYh2rxts0lBjI6rGkG_bM) by Ali Oğuzhan Yıldız
