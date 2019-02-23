@@ -7,7 +7,7 @@ A Python's django based application that triggers spiders from Django views.
    - Basic scrapy pipeline to save crawled objets to Django models.
    - Basic spider definition
    - Basic demo from the oficial tutorial that crawls data from http://quotes.toscrape.com
-
+---
 ### Setup
 1 - Install requirements
 ```
@@ -17,6 +17,7 @@ $ pip install -r requirements.txt
 ```
 $ python manage.py migrate
 ```
+---
 ### Run the project
 3- Start django server
 ```
@@ -33,4 +34,5 @@ Then if you go to the localhost http://127.0.0.1:6800/, you will see the scrapyd
 ```
 $ curl http://localhost:6800/schedule.json -d project=default -d spider=toscrape-css
 ```
+---
 This project is inspired from a blog post of [medium](https://medium.com/@ali_oguzhan/how-to-use-scrapy-with-django-application-c16fabd0e62e?fbclid=IwAR0Ni7cvNk3aKJLTkWkzkYLjOHoYOpV3Tp1Mr_eYh2rxts0lBjI6rGkG_bM) by Ali Oğuzhan Yıldız
